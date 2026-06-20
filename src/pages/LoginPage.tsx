@@ -81,17 +81,15 @@ export default function LoginPage() {
   return (
     <div
       className="min-h-screen flex items-center justify-center p-4 animate-fade-in"
-      style={{ background: 'linear-gradient(135deg, #E084FF 0%, #B800D1 50%, #FFB3E6 100%)' }}
+      style={{ background: 'linear-gradient(135deg, rgb(49, 6, 63) 0%, rgb(103, 28, 113) 50%)' }}  
     >
       <div className="w-full max-w-5xl bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl flex">
 
         {/* Left – Institutional */}
         <div
           className="hidden md:flex flex-col items-center justify-between p-10 relative overflow-hidden flex-1"
-          style={{ background: 'linear-gradient(160deg, #B800D1 0%, #8A00A0 100%)' }}
+          style={{ background: 'linear-gradient(160deg, rgb(115 7 129) 0%, rgb(111 14 126) 100%)' }}
         >
-          <div className="absolute -top-20 -left-20 w-64 h-64 rounded-full opacity-20" style={{ background: '#E084FF' }} />
-          <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full opacity-15" style={{ background: '#5432FF' }} />
 
           <button onClick={() => navigate('landing')} className="self-start relative z-10">
             <Logo size="sm" variant="white" />
