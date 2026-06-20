@@ -198,19 +198,12 @@ export default function LandingPage() {
       <section
         id="hero"
         className="min-h-screen flex items-center relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #B800D1 0%, #7B00A8 60%, #000 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #ef05f7 0%, #530755 60%, #000 100%)' }}
       >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full opacity-20" style={{ background: '#E084FF' }} />
-          <div className="absolute top-1/2 -right-20 w-80 h-80 rounded-full opacity-10" style={{ background: '#D8D688' }} />
-          <div className="absolute -bottom-20 left-1/3 w-64 h-64 rounded-full opacity-15" style={{ background: '#5432FF' }} />
-        </div>
-
         <div className="max-w-6xl mx-auto px-6 w-full flex items-center justify-between gap-8 pt-16">
           <div className="flex-1 animate-slide-in-left">
-            <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-2">CONECT</h1>
             <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-4 text-white">
-              Find Your<br />Hobbie
+              DESCUBRA SEU<br />Hobbie
             </h2>
             <p className="text-white/70 text-lg mb-10 max-w-md">
               Conecte-se a pessoas através de oficinas, hobbies e atividades presenciais próximas de você.
@@ -219,14 +212,14 @@ export default function LandingPage() {
             <div className="flex flex-wrap gap-4">
               <button
                 onClick={handleExplorar}
-                className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-900 hover:scale-105 transition-all duration-200 shadow-xl"
+                className="flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-purple-300 hover:scale-105 transition-all duration-200 shadow-xl"
               >
                 <MapPin size={18} />
                 Explorar oficinas
               </button>
               <button
                 onClick={handleDivulgar}
-                className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-900 hover:scale-105 transition-all duration-200 shadow-xl"
+                className="flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-purple-300 hover:scale-105 transition-all duration-200 shadow-xl"
               >
                 <Users size={18} />
                 Divulgar meu negócio
