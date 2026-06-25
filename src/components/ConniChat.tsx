@@ -19,7 +19,7 @@ export default function ConniChat() {
     if (!isOpen) return;
     const alreadyGreeted = messages.some(m => m.sender === 'conni' && /sou o conni/i.test(m.text));
     if (!alreadyGreeted) {
-      addMessage('Oi, tudo bem? Eu sou o Conni, o chatbot do conect, em que posso ajudar?', 'conni');
+      addMessage('Oi, tudo bem? Eu sou o Conni, em que posso ajudar?', 'conni');
     }
   }, [isOpen, messages]);
 
