@@ -65,7 +65,7 @@ export const ConniProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
 
     if (/aula ao vivo|aula gravada|aulas?/i.test(lower)) {
-      return 'Para aulas gravadas, entre na aba de Aulas ao gravadas e clique em "Entrar". Pronto! pode assistir a sua aula.';
+      return 'Para aulas gravadas, entre na aba de Aulas ao gravadas e clique no play. Pronto! pode assistir a sua aula.';
     }
 
     if (/suporte|ajuda|problema/i.test(lower)) {
