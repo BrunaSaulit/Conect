@@ -38,7 +38,7 @@ export const ConniProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     const lower = userText.toLowerCase();
     // exact short greeting 'oi' should return the full introduction
     if (/^oi[!?.]?$/i.test(lower.trim())) {
-      return 'Oi, tudo bem? Eu sou o Conni, o chatbot do conect, em que posso ajudar?';
+      return 'Oi, tudo bem? Eu sou o Conni, em que posso ajudar?';
     }
 
     if (/(olá|ola|oi conni|e aí|e ai)/i.test(lower)) {
