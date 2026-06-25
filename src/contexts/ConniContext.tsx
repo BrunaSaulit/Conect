@@ -71,6 +71,10 @@ export const ConniProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (/suporte|ajuda|problema/i.test(lower)) {
       return 'Se precisar de suporte, posso te orientar a abrir um chamado ou mostrar o contato de atendimento.';
     }
+    if (/encontros presenciais/i.test(lower)) {{
+      return 'Na aba encontros presenciais você pode reservar as suas oficinas, filtrar por categoria e distância além de acompanhar no mapa onde ela será realizada. Assim você consegue participar de uma que esta perto de você.';
+    }
+
 
     // Default
     return 'Ainda não tenho essa informação específica, mas posso encaminhar sua dúvida ao suporte. Deseja isso?';
