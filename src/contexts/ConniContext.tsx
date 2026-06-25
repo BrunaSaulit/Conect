@@ -65,16 +65,19 @@ export const ConniProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
 
     if (/aula ao vivo|aula gravada|aulas?/i.test(lower)) {
-      return 'Para aulas gravadas, entre na aba de Aulas ao gravadas e clique no play. Pronto! pode assistir a sua aula.';
+      return 'Para aulas gravadas, entre na aba de Aulas Gravadas e clique no play. Pronto! pode assistir a sua aula.';
     }
 
     if (/suporte|ajuda|problema/i.test(lower)) {
       return 'Se precisar de suporte, posso te orientar a abrir um chamado ou mostrar o contato de atendimento.';
     }
-    if (/encontros presenciais/i.test(lower)) {{
+    if (/encontros presenciais/i.test(lower)) {
       return 'Na aba encontros presenciais você pode reservar as suas oficinas, filtrar por categoria e distância além de acompanhar no mapa onde ela será realizada. Assim você consegue participar de uma que esta perto de você.';
     }
-  }
+
+    if (/divulgar o meu negócio/i.test(lower)) {
+      return 'Para divulgar o seu negócio, você deve preencher o formulário com dados sobre o seu negócio, categoria e endereço após publicar a oficina ela passará uma análise de aprovação e caso seja aprovada ela será publicada em nosso site, No botão painel você pode verificar as oficinas publicadas. Se tiver mais alguma dúvida expecifica posso te encaminhar para o suporte. Deseja isso?';
+    }    
 
     // Default
     return 'Ainda não tenho essa informação específica, mas posso encaminhar sua dúvida ao suporte. Deseja isso?';
