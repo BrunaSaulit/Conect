@@ -61,7 +61,7 @@ export const ConniProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
 
     if (/calendário|calendar|reserva|reservar|oficina|workshop/i.test(lower)) {
-      return 'No calendário você pode ver eventos e fazer reservas. Posso te orientar a reservar uma oficina.';
+      return 'No calendário você pode organizar as oficinas que foram agendadas para não se perder, você pode adicionar e remover os card e organizar seu dia, semana e mês da melhor forma.';
     }
 
     if (/aula ao vivo|aula gravada|aulas?/i.test(lower)) {
