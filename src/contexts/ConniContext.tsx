@@ -76,7 +76,7 @@ export const ConniProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
 
     if (/divulgar o meu negócio/i.test(lower)) {
-      return 'Para divulgar o seu negócio, você deve preencher o formulário com dados sobre o seu negócio, categoria e endereço após publicar a oficina ela passará uma análise de aprovação e caso seja aprovada ela será publicada em nosso site, No botão painel você pode verificar as oficinas publicadas. Se tiver mais alguma dúvida expecifica posso te encaminhar para o suporte. Deseja isso?';
+      return 'Após preencher o formulário a oficina passará por uma análise de aprovação e caso seja aprovada ela será publicada, No botão painel você pode verificar as oficinas publicadas. Se tiver mais alguma dúvida expecifica posso te encaminhar para o suporte. Deseja isso?';
     }    
 
     // Default
